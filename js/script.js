@@ -33,12 +33,7 @@ const ArrTeam = [
     },
 ]
 
-let objPerson
 
-for (let i = 0; i < ArrTeam.length; i++) {
-
-    objPerson = ArrTeam[i];
-}
 
 
 console.table(ArrTeam)
