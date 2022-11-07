@@ -79,7 +79,7 @@ function cardGenerator(col, card, img, cardBody, name, occupation) {
 		const occupation = document.createElement('div')
 		occupation.innerHTML = ArrTeam[i].occupation
 		occupation.style.textAlign ='center'
-		occupation.style.fontSize ='.9rem'
+		occupation.style.fontSize ='.7rem'
 		cardBody.append(occupation)
 	}
 }
