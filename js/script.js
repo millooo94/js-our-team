@@ -78,7 +78,7 @@ for (let i = 0; i < ArrTeam.length; i++) {
     const eleCardOccupation = document.createElement('div')
     eleCardOccupation.innerHTML = ArrTeam[i].occupation
     eleCardOccupation.style.textAlign ='center'
-    eleCardOccupation.style.fontSize ='.9rem'
+    eleCardOccupation.style.fontSize ='.7rem'
     eleCardBody.append(eleCardOccupation)
 }
 
