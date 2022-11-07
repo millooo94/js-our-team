@@ -33,6 +33,19 @@ const ArrTeam = [
     },
 ]
 
+const ArrTeam2 = [
+    {
+       name: 'Cane Pazzo',
+       occupation: 'Founder & CEO',
+       img: 'img/wayne-barnett-founder-ceo.jpg',
+   },
+    {
+       name: 'Mr. Flame',
+       occupation: 'Chief Editor',
+       img: 'img/angela-caroll-chief-editor.jpg',
+   },
+]
+
 
 console.table(ArrTeam)
 
@@ -42,14 +55,15 @@ eleTitle.innerHTML = 'OUR TEAM'
 eleContainer.append(eleTitle)
 const eleParagraph = document.createElement('p')
 eleParagraph.classList.add('text-center', 'mt-4', 'mb-5')
-eleParagraph.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesent in varius ante. Sed quis luctus eros. Phasellus rutrum laoreet leo in consequat'
+eleParagraph.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesent in varius ante. Sed quis luctus eros. Phasellus rutrum laoreet leo in consequat.'
 eleContainer.append(eleParagraph)
 
 const eleRow = document.createElement('div')
 eleRow.classList.add('row', 'g-5')
 eleContainer.append(eleRow)
 
-function cardGenerator(col, card, img, cardBody, name, occupation) {
+function cardGenerator(arrM) {
+    
 	for (let i = 0; i < ArrTeam.length; i++) {
 
 		col = document.createElement('div')
@@ -61,7 +75,7 @@ function cardGenerator(col, card, img, cardBody, name, occupation) {
 		col.append(card)
 	
 		const img = document.createElement('img')
-		img.src = ArrTeam[i].img
+		img.src = arrM[i].img
 		card.classList.add('card-img-top')
 		card.append(img)
 	
@@ -70,28 +84,23 @@ function cardGenerator(col, card, img, cardBody, name, occupation) {
 		card.append(cardBody)
 	
 		const name = document.createElement('div')
-		name.innerHTML = ArrTeam[i].name
+		name.innerHTML = arrM[i].name
 		name.style.textAlign ='center'
 		name.style.fontSize ='1.3rem'
 		name.style.fontFamily = 'Playfair Display, serif'
 		cardBody.append(name)
 	
 		const occupation = document.createElement('div')
-		occupation.innerHTML = ArrTeam[i].occupation
+		occupation.innerHTML = arrM[i].occupation
 		occupation.style.textAlign ='center'
 		occupation.style.fontSize ='.7rem'
 		cardBody.append(occupation)
 	}
 }
 
-let eleCol
-let eleCard
-let eleCardBody
-let eleImg
-let eleName
-let eleOccupation
+ 
 
-cardGenerator(eleCol, eleCard, eleImg, eleCardBody, eleName, eleOccupation);
+cardGenerator(ArrTeam2);
 
 
 

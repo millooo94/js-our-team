@@ -42,7 +42,7 @@ eleTitle.innerHTML = 'OUR TEAM'
 eleContainer.append(eleTitle)
 const eleParagraph = document.createElement('p')
 eleParagraph.classList.add('text-center', 'mt-4', 'mb-5')
-eleParagraph.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesent in varius ante. Sed quis luctus eros. Phasellus rutrum laoreet leo in consequat'
+eleParagraph.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesent in varius ante. Sed quis luctus eros. Phasellus rutrum laoreet leo in consequat.'
 eleContainer.append(eleParagraph)
 
 const eleRow = document.createElement('div')
@@ -81,5 +81,3 @@ for (let i = 0; i < ArrTeam.length; i++) {
     eleCardOccupation.style.fontSize ='.7rem'
     eleCardBody.append(eleCardOccupation)
 }
-
-
