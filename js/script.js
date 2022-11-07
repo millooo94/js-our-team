@@ -52,7 +52,7 @@ eleContainer.append(eleRow)
 for (let i = 0; i < ArrTeam.length; i++) {
 
     eleCol = document.createElement('div')
-    eleCol.classList.add('col-4')
+    eleCol.classList.add('col-sm-12', 'col-md-6', 'col-lg-4')
     eleRow.append(eleCol)
 
     const eleCard = document.createElement('div')
